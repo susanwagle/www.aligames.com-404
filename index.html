@@ -1,0 +1,26 @@
+https://bugcrowd.com/settings/identity_verification
+
+Self ("XSS")Cross Site Scripting to account take over of any user <br>
+
+Domain : https://aliexpress.com<br>
+
+Requirement 
+1 : Operating system : Kai Linux to steal user cookies (beef)<br>
+2 : Javascript Payload to bypass the xss protection file <br>
+"><img src=x onerror=prompt(document.cookie)><br>
+3 : Burp Suite to login on victim account <br>
+
+Step to follows 
+step 1 Copy the link  https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20190723045300&SearchText=%2522%253E%253Cimg+src%253Dx+onerror%253Dprompt%2528document.cookie%2529%253E&switch_new_app=y<br>
+step 2 send to  victim <br>
+step 3 wait for the victim to click <br>
+step 4 victim will cilck over it and his/her windows will be pop up <br>
+step 5 attacker open beef and grab the cookie of the victim <br>
+step 6 attacker open burp suite to login the victim account by simple copy and paste the cookie which he has steal . <br>
+step 7 Victim account Sucessfully Compromised By the Attacker <br>
+
+Regards
+SniffBoy(Susant Wagle) (Security Researcher)
+
+
+
